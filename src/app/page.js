@@ -30,8 +30,8 @@ export default function Home() {
           port: 6060,
         }
       });
-      sdk.init((event, data)=>{
-        if(event == 'open') {
+      sdk.init((event, data) => {
+        if(event == 'open' || event == 'reconnect') {
           init_db();
         }
       });
@@ -45,7 +45,7 @@ export default function Home() {
   };
 
   const fetchAllNotes = () => {
-    note_db.find("notes",(resp)=>{
+    note_db.find("notes", (resp)=>{
       setNotes(resp.data);
     });
   }
@@ -82,7 +82,7 @@ export default function Home() {
             note_db.insert("notes",{
               title: noteTitle,
               body: noteBodyContent,
-            }, {uuid: true},()=>{
+            }, {uuid: true}, (res)=>{
               fetchAllNotes();
             });
             setNoteBodyContent('');
@@ -118,7 +118,7 @@ export default function Home() {
                   onBlur={handleNoteBlur}
                   ref={noteTitleRef}
                 />
-                <button className="btn btn-ghost btn-circle" onClick={()=>{setEditorMode(false)}}>
+                <button className="btn btn-ghost btn-circle" onClick={()=>{setEditorMode(false)}} tabIndex="-1">
                   <X />
                 </button>
               </div>

@@ -2195,10 +2195,10 @@ set-function-name@^2.0.0, set-function-name@^2.0.1:
     functions-have-names "^1.2.3"
     has-property-descriptors "^1.0.0"
 
-sharex-sdk@^0.0.8:
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/sharex-sdk/-/sharex-sdk-0.0.8.tgz#41650652cb863010d4ab62e06a85ec068c7a315e"
-  integrity sha512-8VjwhNqW8nLiHqekTKGwLxsLFQe+mRVX4Tlcl9fqeoS1T/rzp+zWcoBhQlSo2BJppmAsEAc8O/eNGem9QJNjbw==
+sharex-sdk@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/sharex-sdk/-/sharex-sdk-0.1.0.tgz#23b3ac011f2f2923dc851f313d3bbc021b8a75b8"
+  integrity sha512-BG9w2Yry85DmFOmvLdNGg2eDMnYqxyUWzn+jMNzyIqq35JC1+ZcXAZv9REOJ9yhNUfFMVi3O7zNWhJ5K9WlVUg==
   dependencies:
     uuid "^9.0.1"
 
