@@ -1,7 +1,6 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
 import { X } from 'lucide-react';
-// import SharexSDK from '../../node_modules/sharex-sdk/src/SharexSDK';
 import SharexSDK from 'sharex-sdk';
 import NoteCard from "./components/note_card";
 
